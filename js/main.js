@@ -69,7 +69,6 @@ let coffees = [
 ];
 
 let container = document.querySelector("#container");
-let submitButton1 = document.querySelector('#firstSubmit');
 let submitButton2 = document.querySelector('#secondSubmit');
 let roastSelection = document.querySelector('#roast-selection');
 let usersRoast = document.querySelector("#add-roast");
@@ -77,7 +76,7 @@ let usersRoast = document.querySelector("#add-roast");
 //code will populate the cards
 container.innerHTML = renderCoffees(coffees);
 
-submitButton1.addEventListener('click', updateCoffees);
+roastSelection.addEventListener('change', updateCoffees);
 submitButton2.addEventListener('click', assignID);
 
 //function allows user to add their own coffee
