@@ -30,3 +30,7 @@ td, th {
     box-shadow: 5px 5px 5px #eee;
     text-shadow: none;
 }
+
+.height-set{
+    min-height: 500px;
+}
