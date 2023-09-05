@@ -23,11 +23,14 @@ function renderCoffees(coffees) {
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let selectedRoast = roastSelection.value;
+    console.log(selectedRoast)
     let filteredCoffees = [];
     coffees.forEach(function (coffee) {
-        if (coffee.roast === selectedRoast) {
+        if (coffee.roast.toLowerCase() === selectedRoast.toLowerCase()) {
+            console.log("test");
             filteredCoffees.push(coffee);
         } else if (selectedRoast.toUpperCase() === 'ALL') {
+            console.log("test2");
             filteredCoffees.push(coffee);
         }
     });
@@ -83,12 +86,14 @@ function assignID (e) {
     // let newList = []
     let userInput = document.querySelector("#second-form").value;
     let newCoffee = {
-        id: 15,
+        id: coffees.length + 1,
         name: userInput,
         roast: usersRoast.value
     }
     coffees.push(newCoffee);
-    container.innerHTML = renderCoffee(coffees);
+    // container.innerHTML = renderCoffee(coffees);
     container.innerHTML = renderCoffees(coffees);
     document.querySelector('#second-form').value="";
 }
+
+
