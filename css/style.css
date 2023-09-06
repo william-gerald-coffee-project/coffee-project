@@ -10,27 +10,43 @@ td, th {
 
 .bk-c {
     background-color: #0dcaf0;
+}
 
-
+.bk-ca {
+    background-color: rosybrown;
 }
 
 .hiu{
-    background: #B9DFFF;
-    color: #fff;
-    border: 1px solid #eee;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #eee;
-    text-shadow: none;
-}
-.hiu:hover {
-    background: #016ABC;
-    color: #fff;
-    border: 1px solid #eee;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #eee;
-    text-shadow: none;
 }
 
 .height-set{
     min-height: 500px;
 }
+
+body {
+    background-color: sandybrown;
+}
+.options {
+    max-height: 100px;
+}
+
+.size {
+    height: 700px;
+    width: 250px;
+}
+
+.psize{
+    height: 700px;
+    width: 75%;
+    margin-left: 200px;
+}
+
+.pword {
+    margin-bottom: 400px;
+}
+
+.word-design{
+    color: black;
+}
+
