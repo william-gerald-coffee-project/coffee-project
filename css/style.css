@@ -8,9 +8,6 @@ td, th {
     padding: 5px 10px;
 }
 
-.bk-c {
-    background-color: #0dcaf0;
-}
 
 .bk-ca {
     background-color: rosybrown;
@@ -18,6 +15,7 @@ td, th {
 
 .hiu{
     border-radius: 20px;
+    background-color: rosybrown;
 }
 
 .height-set{
@@ -46,7 +44,13 @@ body {
     margin-bottom: 400px;
 }
 
-.word-design{
+.pic1-color{
     color: black;
 }
-
+.acc-color {
+    color: green;
+}
+.pic2-color{
+    color: white;
+    text-shadow: black;
+}
