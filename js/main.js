@@ -1,3 +1,4 @@
+(function () {
 "use strict"
 // function adds object properties to html elements
 function renderCoffee(coffee) {
@@ -95,4 +96,4 @@ function assignID (e) {
     document.querySelector('#second-form').value="";
 }
 
-
+})();
